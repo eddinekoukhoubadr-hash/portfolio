@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badr Eddine Koukhou | Développeur Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="protection-overlay" id="protectionOverlay"></div>
+
+    <div class="warning-message" id="warningMessage">
+        <h3><i class="fas fa-shield-alt"></i> Protection Activée</h3>
+        <p>L'inspection du code, le clic droit et la copie sont désactivés sur ce site pour protéger le contenu.</p>
+        <button class="btn btn-primary" onclick="closeWarning()">Compris</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span>Badr Eddine Koukhou</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#profile" class="nav-link">Profil</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-rocket"></i> Développeur Full Stack</div>
+                <h1 class="hero-title">Je transforme des idées en <span class="accent">expériences digitales</span> exceptionnelles</h1>
+                <p class="hero-description">
+                    Développeur passionné, spécialisé dans la création d'applications web modernes avec ReactJS, Laravel & Node.js.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Me contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/badreddinekoukhou/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/eddinekoukhoubadr-hash" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/pedro.je.sam" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <p class="section-description">
+                Je suis Badr Eddine Koukhou, un développeur full stack passionné par le développement web et la sécurité des applications. J'ai 22 ans et j'aime transformer des idées en projets concrets et fonctionnels.
+            </p>
+            <div class="about-cards">
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Formation</h3>
+                    <p>Licence professionnelle en informatique</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Expérience</h3>
+                    <p>Stage en développement web Full Stack</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-star"></i>
+                    <h3>Passion</h3>
+                    <p>Créer des projets innovants et sécurisés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="container">
+            <h2 class="section-title">Mon Profil</h2>
+            <div class="profile-content">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="img.jpg" alt="Badr Eddine Koukhou">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Badr Eddine Koukhou</h3>
+                        <p class="profile-title">Développeur Full Stack</p>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>eddinekoukhoubadr@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+212 657 038 202</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Benslimane, Maroc</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Licence Professionnelle en Développement</span>
+                            </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Stages</span>
+                            </div>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="CV-BADR-EDDINE-KOUKHOU-vf.pdf" download class="btn btn-primary">
+                                <i class="fas fa-download"></i> Télécharger CV
+                            </a>
+                            <button class="btn btn-outline" onclick="showContactInfo()">
+                                <i class="fas fa-share-alt"></i> Partager
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-extra">
+                    <div class="info-card">
+                        <h4><i class="fas fa-language"></i> Langues</h4>
+                        <div class="languages">
+                            <div class="language">
+                                <span>Arabe</span>
+                                <div class="language-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <span>Français</span>
+                                <div class="language-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <span>Anglais</span>
+                                <div class="language-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4><i class="fas fa-award"></i> Certifications</h4>
+                        <ul class="certifications">
+                            <li>
+                                <i class="fas fa-certificate"></i>
+                                <span>Introduction to Cybersecurity - Cisco</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-certificate"></i>
+                                <span>Networking Basics - Cisco</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4><i class="fas fa-heart"></i> Centres d'intérêt</h4>
+                        <div class="interests">
+                            <span class="interest-tag">Cybersécurité</span>
+                            <span class="interest-tag">Nouvelles technologies</span>
+                            <span class="interest-tag">Développement web</span>
+                            <span class="interest-tag">Réseaux informatiques</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <p>ReactJS</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node-js"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-laravel"></i>
+                    <p>Laravel</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Projet 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Application Web React</h3>
+                    <p>Une application moderne utilisant ReactJS et API REST.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Projet 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Site E-commerce Laravel</h3>
+                    <p>Un site e-commerce complet avec Laravel et MySQL.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="p3.png" alt="Projet 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://eddinekoukhoubadr-hash.github.io/portfolio/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/eddinekoukhoubadr-hash/portfolio/" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Portfolio Professionnel</h3>
+                    <p>Site portfolio moderne et responsive avec thème clair/sombre, animations et protection du contenu</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Font Awesome</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">Vous pouvez me contacter via le formulaire ci-dessous :</p>
+            <form class="contact-form" action="https://formspree.io/f/myznokpr" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nom complet" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Envoyer</span>
+                    <div class="btn-loader" style="display: none;">
+                        <div class="loader"></div>
+                    </div>
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:eddinekoukhoubadr@gmail.com">eddinekoukhoubadr@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+212 6 57 03 82 02</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Maroc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>Badr Eddine Koukhou</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/badreddinekoukhou/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/eddinekoukhoubadr-hash" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/pedro.je.sam" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Badr Eddine Koukhou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
