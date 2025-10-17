@@ -154,15 +154,29 @@ function initContactForm() {
         btnLoader.style.display = 'block';
         submitBtn.disabled = true;
         
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
-        form.reset();
-        
-        btnText.style.display = 'block';
-        btnLoader.style.display = 'none';
-        submitBtn.disabled = false;
-        
-        alert('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
+        try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                form.reset();
+                alert('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
+            } else {
+                alert('Une erreur est survenue. Veuillez réessayer.');
+            }
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez réessayer.');
+        } finally {
+            btnText.style.display = 'block';
+            btnLoader.style.display = 'none';
+            submitBtn.disabled = false;
+        }
     });
 }
 
